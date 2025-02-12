@@ -1,0 +1,167 @@
+{
+        "intents": {
+          "greeting": {
+            "examples": [
+              "Hi", "Hello", "Hey", "Greetings", "Good morning", "Good evening", "Hi there",
+              "Howdy", "What's up?", "Yo", "Sup?", "Heya"
+            ],
+            "responses": [
+              "Hello! How can I assist you today?", "Hi there! What do you need help with?",
+              "Hey! How's it going?", "Hi! What can I do for you?", "Greetings! Need assistance?"
+            ]
+          },
+          "farewell": {
+            "examples": [
+              "Bye", "Goodbye", "See you later", "Take care", "I'm leaving", "Catch you later",
+              "Later!", "Peace out", "Adios", "Au revoir", "Ciao", "Farewell"
+            ],
+            "responses": [
+              "Goodbye! Have a great day!", "Take care! Come back anytime.", "See you later!",
+              "Farewell! Stay safe!", "Ciao! Till next time."
+            ]
+          },
+          "smalltalk": {
+            "weather": {
+              "examples": [
+                "How's the weather?", "What's the weather like?", "Is it sunny today?",
+                "Will it rain today?", "Weather forecast?", "Tell me about the weather"
+              ],
+              "responses": [
+                "It's sunny outside!", "Looks like it's raining today.", "The weather is great today!",
+                "It's cloudy with a chance of rain.", "A bit chilly but nice!"
+              ]
+            },
+            "mood": {
+              "examples": [
+                "How are you?", "What's up?", "How's it going?", "How do you feel?",
+                "What's your mood today?", "Are you okay?"
+              ],
+              "responses": [
+                "I'm just a bot, but I'm doing great!", "I'm here to assist you!",
+                "Feeling chatty today!", "As good as a bot can be!", "All systems operational!"
+              ]
+            },
+            "jokes": {
+              "examples": [
+                "Tell me a joke", "Make me laugh", "Any jokes?", "Say something funny",
+                "Humor me", "Got any jokes?"
+              ],
+              "responses": [
+                "Why don't scientists trust atoms? Because they make up everything!",
+                "Why did the scarecrow win an award? Because he was outstanding in his field!",
+                "I'm reading a book on anti-gravity. It's impossible to put down!",
+                "Why did the coffee file a police report? It got mugged!"
+              ]
+            }
+          },
+          "help": {
+            "examples": [
+              "I need help", "Can you assist me?", "Help me, please", "What can you do?",
+              "Show me your commands", "How can you help?"
+            ],
+            "responses": [
+              "Sure! What do you need help with?", "I'm here to help! Please tell me more.",
+              "How can I assist you today?", "Let me know what you need!", "I'm ready to assist!"
+            ]
+          },
+          "fallback": {
+            "examples": [
+              "I don't get it", "What do you mean?", "Explain", "Can you clarify?",
+              "Not sure what you mean", "Huh?"
+            ],
+            "responses": [
+              "I'm sorry, could you clarify?", "I didn't understand that. Can you try again?",
+              "Let's try something different.", "Not sure I caught that. Could you rephrase?"
+            ]
+          }
+        },
+        "user_profiles": [
+          {
+            "user_id": "001",
+            "name": "Alice",
+            "preferences": {
+              "language": "en",
+              "timezone": "EST",
+              "theme": "light"
+            },
+            "interaction_history": [
+              { "intent": "greeting", "timestamp": "2025-01-25T10:00:00Z" },
+              { "intent": "smalltalk.weather", "timestamp": "2025-01-25T10:05:00Z" }
+            ]
+          },
+          {
+            "user_id": "002",
+            "name": "Bob",
+            "preferences": {
+              "language": "fr",
+              "timezone": "CET",
+              "theme": "dark"
+            },
+            "interaction_history": [
+              { "intent": "help", "timestamp": "2025-01-26T09:00:00Z" },
+              { "intent": "greeting", "timestamp": "2025-01-26T09:05:00Z" }
+            ]
+          },
+          {
+            "user_id": "003",
+            "name": "Charlie",
+            "preferences": {
+              "language": "es",
+              "timezone": "PST",
+              "theme": "dark"
+            },
+            "interaction_history": [
+              { "intent": "greeting", "timestamp": "2025-01-20T08:10:00Z" },
+              { "intent": "smalltalk.mood", "timestamp": "2025-01-20T08:20:00Z" }
+            ]
+          }
+        ],
+        "settings": {
+          "default_language": "en",
+          "default_timezone": "UTC",
+          "max_responses_per_intent": 5,
+          "error_message": "Sorry, I didn't understand that. Can you rephrase?",
+          "fallback_intent": {
+            "examples": [
+              "I don't understand", "What?", "Say that again?", "Come again?", "What do you mean?"
+            ],
+            "responses": [
+              "Could you clarify that?", "I'm not sure I understood. Can you rephrase?",
+              "Let's try again. What do you mean?", "Sorry, I didn't catch that."
+            ]
+          }
+        },
+        "system_logs": {
+          "start_time": "2025-01-26T08:00:00Z",
+          "active_sessions": 50,
+          "errors": [
+            { "type": "intent_not_found", "timestamp": "2025-01-26T08:15:00Z" },
+            { "type": "response_generation_error", "timestamp": "2025-01-26T08:30:00Z" }
+          ]
+        },
+        "extended_data": {
+          "intent_details": [
+            {
+              "name": "greeting",
+              "usage_count": 1045,
+              "top_responses": ["Hello! How can I assist you?", "Hi there!"]
+            },
+            {
+              "name": "farewell",
+              "usage_count": 978,
+              "top_responses": ["Goodbye! Have a great day!", "See you later!"]
+            },
+            {
+              "name": "smalltalk.weather",
+              "usage_count": 452,
+              "top_responses": ["The weather is sunny!", "Looks like it might rain."]
+            },
+            {
+              "name": "help",
+              "usage_count": 1205,
+              "top_responses": ["I'm here to help! What do you need?", "Let me assist you."]
+            }
+          ]
+        }
+      }
+      
